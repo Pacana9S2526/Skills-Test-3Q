@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BOOTSTRAP-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <main class="text-center">
+    <div class="container p-5 mt-5 bg-light text-dark center rounded-3">
+     <h1>Member Sign-Up</h1>
+     <hr>
+     <h3>Student Details</h3>
+     <label for="name">Full Name: </label>
+     <input type="text" id="name" placeholder="Enter your full name" class="form-control w-50 mx-auto mb-3">
+     <label for="ticket">Ticket Quantity: </label>
+     <input type="number" id="ticket" placeholder="Enter your ticket quantity" class="form-control w-50 mx-auto mb-3">
+        <label for="subtotal">Subtotal: </label>
+        <input type="text" id="subtotal" class="form-control w-50 mx-auto mb-3" value="50" readonly>
+     <hr>
+     <label for="ticketTotal">Ticket Total: </label>
+     <h3>Total Fare: <span id="ticketTotal" class="boxed">0</span></h3>
+     <button type="button" class="btn btn-success" onclick="calculateTotal()">CALCULATE</button>
+     <button type="button" class="btn btn-secondary" onclick="location.reload()">REFRESH</button>
+    </div>
+
+</body>
+</html>
